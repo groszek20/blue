@@ -4,7 +4,7 @@ import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
 
 @Configuration
-@ComponentScan("pl.blue*")
+@ComponentScan("pl.controllers")
 public class BlueWebConfigurer {
 
 }
