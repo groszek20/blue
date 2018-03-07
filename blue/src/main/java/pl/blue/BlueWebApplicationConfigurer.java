@@ -1,4 +1,4 @@
-package blue;
+package pl.blue;
 
 import org.springframework.web.servlet.support.AbstractAnnotationConfigDispatcherServletInitializer;
 
