@@ -4,15 +4,15 @@ import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
 
+import pl.blue.services.AppIssueService;
 import pl.blue.services.IssuesService;
 import pl.blue.services.WebIssueService;
 
 @Configuration
-@ComponentScan("pl.blue")
-public class BlueWebConfigurer {
+public class BlueAppConfigurer {
 
-//	@Bean
+	@Bean
 	public IssuesService issuesService() {
-		return new WebIssueService();
+		return new AppIssueService();
 	}
 }
