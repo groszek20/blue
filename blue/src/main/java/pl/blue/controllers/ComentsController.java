@@ -8,19 +8,20 @@ import org.springframework.web.bind.annotation.ResponseBody;
 import pl.blue.services.IssuesService;
 
 @Controller
-public class webController {
+@RequestMapping("/comments")
+public class ComentsController {
 
 	private IssuesService issuesService;
 
 	@Autowired
-	public webController(IssuesService issuesService) {
+	public ComentsController(IssuesService issuesService) {
 		super();
 		this.issuesService = issuesService;
 	}
 
-	@RequestMapping("/issue")
+	@RequestMapping("/**")
 	@ResponseBody
 	public String test() {
-		return issuesService.getIssue();
+		return "comment";
 	}
 }

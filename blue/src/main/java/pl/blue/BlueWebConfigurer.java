@@ -11,7 +11,7 @@ import pl.blue.services.WebIssueService;
 @ComponentScan("pl.blue")
 public class BlueWebConfigurer {
 
-//	@Bean
+	@Bean
 	public IssuesService issuesService() {
 		return new WebIssueService();
 	}
